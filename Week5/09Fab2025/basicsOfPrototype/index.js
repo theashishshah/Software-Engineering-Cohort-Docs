@@ -12,3 +12,5 @@ tea.chai()
 const myTeas = ["Green tea", "Ginger tea", "Orange tea", "Olong tea"]
 
 myTeas.chai();
+
+let fname = "Ashish"

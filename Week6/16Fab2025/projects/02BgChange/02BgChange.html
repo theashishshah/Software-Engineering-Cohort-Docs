@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="image.png" type="image/x-icon">
+    <title>Background Change</title>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        button {
+            background-color: #2196F3;
+            color: white;
+            border: none;
+            padding: 16px 24px;
+            font-size: 18px;
+            border-radius: 4px;
+            box-shadow: 2px 2px 4px rgba(32, 1, 1, 0.2);
+        }
+
+        button:hover {
+            background-color: #1E88E5;
+        }
+
+        div {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1>Ashish Shah</h1>
+        <button id="theme-button">Change Theme</button>
+    </div>
+    <script>
+        function changeBackgroundColor(color) {
+            document.body.style.backgroundColor = color;
+        }
+
+        function changeTextColor(color) {
+            const h1Tag = document.body.children[0];
+            h1Tag.style.color = color;
+        }
+
+        const themeButton = document.getElementById("theme-button")
+
+        themeButton.addEventListener('click', () => {
+            console.log(document.body.style.backgroundColor, "bg color")
+            const bgColor = document.body.style.backgroundColor
+            if (!bgColor | bgColor === "white") {
+                changeBackgroundColor("black")
+                themeButton.innerText = "White Mode"
+            } else {
+                changeBackgroundColor("white")
+                themeButton.innerText = "Dark Mode"
+            }
+        })
+
+        themeButton.addEventListener('click', () => {
+            // logic:
+            // get background color
+            // then set text color depending upon background color
+            const bgColor = document.body.style.backgroundColor;
+            if (!bgColor | bgColor === "white") {
+                changeTextColor("black")
+            } else {
+                changeTextColor("white")
+            }
+        })
+
+    </script>
+</body>
+
+</html>

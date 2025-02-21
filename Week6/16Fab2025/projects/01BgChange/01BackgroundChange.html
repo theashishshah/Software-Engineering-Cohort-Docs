@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="image.png" type="image/x-icon">
+    <title>Background Change</title>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        button {
+            background-color: #2196F3;
+            color: white;
+            border: none;
+            padding: 16px 24px;
+            font-size: 18px;
+            border-radius: 4px;
+            box-shadow: 2px 2px 4px rgba(32, 1, 1, 0.2);
+        }
+
+        button:hover {
+            background-color: #1E88E5;
+        }
+        div{
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1>Ashish Shah</h1>
+        <button onclick="changeBgColor('black')">Change Black</button>
+        <button onclick="changeBgColor('white')">Change White</button>
+    </div>
+    <script>
+        // This is violeting DRY principle
+
+        // function changeBgColorBlack(){
+        //     const h1Tag = document.body.children[0];
+        //     h1Tag.style.color = "white"
+        //     document.body.style.background = "black"
+
+        // }
+
+        // function changeBgColorWhite(){
+        //     const h1Tag = document.body.children[0];
+        //     h1Tag.style.color = "black"
+        //     document.body.style.background = "white"
+        // }
+
+        function changeBgColor(color) {
+            const h1Tag = document.body.children[0];
+            document.body.style.background = color
+            if (color === "black") {
+                h1Tag.style.color = "white"
+            } else {
+                h1Tag.style.color = "black"
+            }
+        }
+    </script>
+</body>
+
+</html>

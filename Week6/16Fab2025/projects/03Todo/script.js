@@ -11,11 +11,11 @@ const checkedInput = document.getElementById("check-btn")
 
 
 addButton.addEventListener('click', () => {
-    const value = todoData.value;
-    const modifiedValue = " " + value + " "
+    const value = todoData.value.trim();
+    console.log(value)
     todoData.value = ""
-
-    if (value) {
+    if (value !="" || value) {
+        const modifiedValue = " " + value + " "
         const li = document.createElement('li')
 
         const divContainer = document.createElement("div")
@@ -57,7 +57,7 @@ addButton.addEventListener('click', () => {
         })
         // console.log(li)
     } else {
-        console.log("Enter task")
+        alert("Enter task")
     }
 
 })

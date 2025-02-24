@@ -1,0 +1,69 @@
+<nav class="navigation">
+    <div class="navigation__left">
+        <li><a href=""><img src="image.png" height="32px" width="32px" alt="Logo"></a></li>
+        <li><a href="">Feedback Inc.</a></li>
+    </div>
+    <div class="navigation__right">
+        <li><a href="">Contact</a></li>
+        <li><a href="">Github</a></li>
+        <li><a href="">LinkedIn</a></li>
+        <li><a href="">About me</a></li>
+    </div>
+</nav>
+
+<div class="feedback-container">
+    <div class="feedback-container__left">
+        <div class="feedback-container__heading">
+            <h2 class="feedback-container__title">Give Feedback</h2>
+            <p class="feedback-container__description">What do you think about this web dev cohort?</p>
+        </div>
+        <div class="feedback-container__emoji">
+            <li><img src="1st.png" alt="Emoji 1"></li>
+            <li><img src="2nd.png" alt="Emoji 2"></li>
+            <li><img src="1st.png" alt="Emoji 3"></li>
+            <li><img src="1st.png" alt="Emoji 4"></li>
+            <li><img src="1st.png" alt="Emoji 5"></li>
+        </div>
+        <div class="feedback-container__name">
+            <label for="name">What's your name?</label>
+            <input type="text" name="name" id="name" placeholder="Should I call you hacker?">
+        </div>
+
+        <div class="feedback-container__message">
+            <label for="message">Do you have any thoughts you'd like to share?</label>
+            <textarea id="message-input" placeholder="Write feedback..."></textarea>
+            <div class="feedback-container__message-info">
+                <span>Entered characters: 344</span>
+                <span>Character limit: 500</span>
+            </div>
+        </div>
+
+        <div class="feedback-container__buttons">
+            <button id="secondary-btn" class="button button--secondary">Cancel</button>
+            <button id="primary-btn" class="button button--primary">Send</button>
+        </div>
+    </div>
+
+    <div class="feedback-container__right">
+        <div class="feedback-card">
+            <div class="feedback-card__heading">
+                <div class="feedback-card__name-avatar">
+                    <div class="feedback-card__avatar">A</div>
+                    <div class="feedback-card__user-name">Ashish Shah</div>
+                </div>
+                <div class="feedback-card__rating">
+                    <div class="feedback-card__rating-score">4/5</div>
+                    <div><img src="1st.png" alt="Rating Emoji" class="feedback-card__emoji" width="44px" height="44px"></div>
+                </div>
+            </div>
+            <div class="feedback-card__message">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias tempora in inventore, recusandae
+                voluptatem pariatur at sunt veritatis dolores, eaque dicta iste dolorem dolore...
+            </div>
+            <div class="feedback-card__footer">
+                <div class="feedback-card__user-agent">User agent: Chrome</div>
+                <div class="feedback-card__date-time">23 Feb 2025, 12:23:23 PM</div>
+            </div>
+        </div>
+    </div>
+</div>

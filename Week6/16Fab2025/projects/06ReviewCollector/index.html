@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="image.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>Feedback Inc.</title>
+    <style>
+        #main-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: calc(100vh - 30px);
+            background: #EAEDF5;
+            gap: 8px;
+        }
+
+        div {
+            width: 100%;
+        }
+
+        #left-main-container {
+            border-radius: 8px;
+            margin: 40px 16px;
+            height: 800px;
+            width: 550px;
+            background: white;
+            padding: 80px 40px;
+            box-shadow: 2px 0px 15px rgba(207, 221, 224, 0.486);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        #right-main-container {
+            border-radius: 8px;
+            margin: 40px 16px;
+            height: 800px;
+            width: 850px;
+            background: white;
+            padding: 64px 40px;
+            box-shadow: 2px 0px 15px rgba(207, 221, 224, 0.486);
+        }
+
+        label {
+            display: block;
+            font-weight: 500;
+        }
+
+        #div-btn {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 24px;
+        }
+
+        button {
+            width: 50%;
+            padding: 12px 0px;
+            border: none;
+            border-radius: 4px;
+            font-weight: 500;
+        }
+
+        #primary-btn {
+            background-color: #3B70FF;
+            color: white;
+        }
+
+        #message-input {
+            padding: 8px;
+            text-align: left;
+            width: 100%;
+            height: 150px;
+            margin: 4px 0px;
+            border-radius: 4px;
+            border: 1px solid rgba(39, 39, 40, 0.397);
+        }
+
+        #message-input:focus,
+        #div-name>input:focus {
+            border-color: rgba(15, 15, 200, 0.442);
+            outline: none;
+        }
+
+        #div-name>input {
+            margin-top: 8px;
+            width: 100%;
+            border-radius: 4px;
+            outline: none;
+            border: 1px solid rgba(39, 39, 40, 0.397);
+            padding: 8px 8px;
+        }
+
+        #name {
+            width: 100%;
+
+        }
+
+        #div-emoji {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        #div-message>div>span {
+            font-size: 14px;
+        }
+
+        #div-message>div {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        #div-heading>p {
+            margin-top: 8px;
+            color: #3B70FF;
+        }
+
+        #avatar-name-rating {
+            display: flex;
+            justify-content: space-between;
+
+        }
+
+        #avatar {
+            padding: 20px;
+            background-color: rgb(168, 218, 240);
+            font-weight: 600;
+            border-radius: 25px;
+            height: 40px;
+            width: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+        }
+
+        #heading {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            /* margin: 12px; */
+            border: 1px solid orange;
+            padding: 8px 16px;
+        }
+
+        #rating-emoji {
+            width: 50%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-weight: 600;
+            text-align: right;
+        }
+
+        #name-avatar {
+            width: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 12px;
+        }
+
+        #user-name {
+            font-weight: 600;
+            
+        }
+        
+        #message{
+            /* border: 1px solid orangered; */
+            padding: 16px;
+            /* margin: 16px; */
+        }
+        #footer-details{
+            /* border: 1px solid orangered; */
+            padding: 16px;
+            /* margin: 16px; */
+            display: flex;
+            justify-content: space-between;
+        }
+        #date-time{
+            text-align: right;
+        }
+        .card{
+            margin-bottom: 16px;
+            padding: 16px 32px;
+            /* border: 0.5px solid orange; */
+            border-bottom: 1px solid rgb(5, 40, 240);
+            border-radius: 4px;
+            box-shadow: 1px 0px 15px rgba(0, 0, 0, 0.058);
+        }
+        
+        #message-emoji{
+            height: 44px;
+            width: 44px;
+        }
+        #rating{
+            height: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div id="left-container">
+            <li><a href=""><img src="image.png" height="32px" width="32px" alt=""></a></li>
+            <li><a href="">Feedback Inc.</a></li>
+        </div>
+        <div id="right-container">
+            <li><a href="">Contact</a></li>
+            <li><a href="">Github</a></li>
+            <li><a href="">LinkedIn</a></li>
+            <li><a href="">About me</a></li>
+        </div>
+    </nav>
+    <div id="main-container">
+        <div id="left-main-container">
+            <div id="div-heading">
+                <h2>Give Feedback</h2>
+                <p>What do you think about this web dev cohort?</p>
+            </div>
+            <div id="div-emoji">
+                <li><img src="1st.png" alt=""></li>
+                <li><img src="2nd.png" alt=""></li>
+                <li><img src="1st.png" alt=""></li>
+                <li><img src="1st.png" alt=""></li>
+                <li><img src="1st.png" alt=""></li>
+            </div>
+            <div id="div-name">
+                <label for="name">What's your name?</label>
+                <input type="tel" name="name" id="name" placeholder="Shoud I call you hacker?">
+            </div>
+
+            <div id="div-message">
+                <label for="message">Do you have any thought you'd like to share?
+                </label>
+                <textarea name="" id="message-input" placeholder="Write feedback..."></textarea>
+                <div>
+                    <span>Entered characters: 344</span>
+                    <span>Characters limit: 500</span>
+                </div>
+            </div>
+
+            <div id="div-btn">
+                <button id="secondary-btn">Cancel</button>
+                <button id="primary-btn">Send</button>
+            </div>
+
+        </div>
+        <div id="right-main-container">
+            <div class="card">
+                <div id="heading">
+                    <div id="name-avatar">
+                        <div id="avatar">A</div>
+                        <div id="user-name">Ashish Shah</div>
+                    </div>
+                    <div id="rating-emoji">
+                        <div id="rating">4/5</div>
+                        <div><img src="1st.png" alt="" width="44px" height="44px" id="message-emoji"></div>
+                    </div>
+                </div>
+                <div id="message">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias tempora in inventore, recusandae
+                    voluptatem pariatur at sunt veritatis dolores, eaque dicta iste dolorem dolore. Hic ducimus
+                    architecto praesentium quidem cumque deserunt placeat ipsa explicabo error aut doloribus ab est
+                    possimus quisquam nostrum, porro nemo inventore dicta quo sint! Magnam, debitis?
+                </div>
+                <div id="footer-details">
+                    <div id="user-agent">User agent: Chrome</div>
+                    <div id="date-time">23 Fab 2025, 12:23:23 PM</div>
+                </div>
+            </div>
+           
+        </div>
+    </div>
+</body>
+
+</html>

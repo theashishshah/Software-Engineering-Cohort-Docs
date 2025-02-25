@@ -12,6 +12,9 @@ h1 {
   margin-bottom: 30px;
   color: #2c3e50;
 }
+img{
+  object-fit: cover;
+}
 
 .carousel-container {
   position: relative;

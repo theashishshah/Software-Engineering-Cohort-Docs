@@ -39,3 +39,19 @@ one = 5;
 
 ## is let and const variable hoist?
 -- yes they hoist but they can't be accessed due to TDZ. but in the case of "var" there is no TDZ
+
+## suppose Proxy doesn't exist in JS, but I want to achive behaviour of Proxy, how can I?(write polyfill of proxy)
+
+## why you can't user target.prop = value in Proxy set method?
+because prop is a variable name not the obj's property itself(if we're doing like this so basically we're adding a prop property in obj not the actual property what user may want to add).
+```javascript  // give me the output
+let naam = "shah";
+user.naam = "Ashish shah"
+console.log(user.naam)
+
+and also give me the output of this
+let naam = "shah";
+user[naam] = "Ashish shah"
+console.log(user.naam)
+
+```

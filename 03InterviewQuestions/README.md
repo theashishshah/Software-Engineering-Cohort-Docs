@@ -39,7 +39,7 @@ one = 5;
 
 ## is let and const variable hoist?
 -- yes they hoist but they can't be accessed due to TDZ. but in the case of "var" there is no TDZ
-
+ 
 ## suppose Proxy doesn't exist in JS, but I want to achive behaviour of Proxy, how can I?(write polyfill of proxy)
 
 ## why you can't user target.prop = value in Proxy set method?
@@ -55,3 +55,6 @@ user[naam] = "Ashish shah"
 console.log(user.naam)
 
 ```
+
+## Do JS has the capabilities to call network?
+no, js never has the capabilities to call network, when we use fetch, this goes to browser and browser does the job.

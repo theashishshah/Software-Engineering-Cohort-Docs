@@ -18,7 +18,7 @@ const proxiedUser = new Proxy(user, {
         if (value < 0) {
             throw new Error("Negative age.")
         }
-        target[prop] = value;
+        target[props] = value;
         return true
         
     }

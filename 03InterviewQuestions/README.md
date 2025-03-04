@@ -71,3 +71,6 @@ console.log("Value of fname is ", fname);
 sayName();
 ```
 because we're not re-declaring in the memory phase of sayName function, it is beinge declared for the first time, that's why we're not getting error, and fname ="Ashish" is available in sayName scope, not in its memory
+
+## What is the life cycle of promises?
+Promises have a well-defined lifecycle with the following states: pending : Initial state, neither fulfilled nor rejected. fulfilled : The operation was completed successfully, and a result is available. rejected : The operation encountered an error, and an error reason is available

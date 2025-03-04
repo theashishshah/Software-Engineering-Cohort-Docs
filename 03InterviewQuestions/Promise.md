@@ -1,0 +1,1 @@
+[Promise related questions](https://umarfarooquekhan.medium.com/javascript-tricky-promises-related-questions-nodejs-aca3f7c4ed80)

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>This keyword</title>
+    </head>
+    <body>
+        <h2>Ashish shah</h2>
+        <script>
+            // 'use strict'
+            var fname = 'Ashish';
+            var lname = 'Shah';
+            var age = 21
+
+            const user = {
+                fname: 'Ashish',
+                lname: 'Shah',
+                age: 21,
+                printDetails:  ()=> {
+                    console.log(
+                        `My fname is: ${this.fname} and lname is: ${this.lname}, and I'm ${this.age} YO.`
+                    );
+                },
+            };
+
+            function printDetails() {
+                console.log(
+                    `My fname is: ${this.fname} and lname is: ${this.lname}, and I'm ${this.age} YO.`
+                );
+            }
+            user.printDetails.call(user)
+            // printDetails()
+        </script>
+    </body>
+</html>

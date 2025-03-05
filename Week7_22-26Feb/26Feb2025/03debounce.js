@@ -1,8 +1,10 @@
 function one(fn, delay) {
     let id;
-    return function (args) {
+    return function () {
         clearTimeout(id);
+        console.log(id)
         id = setTimeout(() => {
+            // console.log(this)
             fn.apply(this, args);
         }, delay * 1000);
     };
@@ -13,16 +15,18 @@ const cb = () => {
 };
 
 const fn = one(cb, 3);
-fn();
-fn();
-fn();
+fn(["hello"]);
+fn(["hello"]);
+fn(["hello"]);
 
-let myname;
-function two(naam) {
-    console.log(myname);
-    myname = naam;
-    console.log(`my name is ${myname}`);
-}
+
+
+// let myname;
+// function two(naam) {
+//     console.log(myname);
+//     myname = naam;
+//     console.log(`my name is ${myname}`);
+// }
 // two(3)
 // myname = "Ashish"
 // two(325)

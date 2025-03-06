@@ -19,40 +19,41 @@
         
     </head>
     <body>
-        <div class="container">
-            <div class="container-one">
-                <div class="heading-container">
-                    <div class="heading-description">
+        <button class="btn-add-board">+ Add New Board</button>
+        <div class="kanban-board-container">
+            <div class="kanban-board">
+                <div class="kanban-board-header">
+                    <div class="board-heading-text-details">
                         <div class="board-name-details">
-                            <div class="circle"></div>
-                            <span class="board-name">To-Do</span>
-                            <span class="board-items">23</span>
+                            <div class="kanban-board-color-icon"></div>
+                            <span class="kanban-board-title">To-Do</span>
+                            <span class="kanban-board-task-count">23</span>
                         </div>
-                        <div class="board-description">
-                            <span class="description"
+                        <div class="kanban-board-description">
+                            <span class="kanban-description-text"
                                 >These are the tasks have to do</span
                             >
                         </div>
                     </div>
-                    <div class="menu-button">
+                    <div class="kanban-edit-button">
                         <img
                             src="assests/dots-menu.svg"
-                            alt="menu icon"
+                            alt="edit icon"
                             height="40%"
                         />
                     </div>
                 </div>
-                <div class="add-task-section">
-                    <button class="add-task">+ Add New Task</button>
+                <div class="kanban-board-add-task-section">
+                    <button class="button-add-task">+ Add New Task</button>
                 </div>
-                <div class="tasks-section">
-                    <div class="task-one">
-                        <div class="task-heading-section">
-                            <div class="task-heading-and-priority">
-                                <p class="task-heading">Learn JavaScript</p>
+                <div class="kanban-board-tasks">
+                    <div class="kanban-task-card">
+                        <div class="kanban-task-header">
+                            <div class="kanban-task-info">
+                                <p class="kanban-task-title">Learn JavaScript</p>
                                 <span class="task-priority-high">High</span>
                             </div>
-                            <div class="task-edit">
+                            <div class="kanban-task-edit-menu">
                                 <img
                                     src="assests/dots-menu.svg"
                                     alt="menu icon"
@@ -60,26 +61,26 @@
                                 />
                             </div>
                         </div>
-                        <div class="task-description-section">
+                        <div class="kanban-task-description">
                             Lorem ipsum, dolor sit amet consectetur adipisicing
                             elit. Recusandae ex quos impedit debitis quaerat
                             veniam quia minus tempora, deleniti porro
                             voluptatibus ducimus maiores facere adipisci eum,
                             non, vel commodi saepe?
                         </div>
-                        <hr class="hr-line" />
-                        <div class="task-footer-section">
-                            <p>Assigned To: Ashish Shah</p>
-                            <p>03 March 2025, 23:33PM</p>
+                        <hr class="kanban-task-divider" />
+                        <div class="kanban-task-footer">
+                            <p class="task-assigned-to">Assigned To: Ashish Shah</p>
+                            <p class="task-created-date">03 March 2025, 23:33PM</p>
                         </div>
                     </div>
-                    <div class="task-one">
-                        <div class="task-heading-section">
-                            <div class="task-heading-and-priority">
-                                <p class="task-heading">Learn JavaScript</p>
+                    <div class="kanban-task-card">
+                        <div class="kanban-task-header">
+                            <div class="kanban-task-info">
+                                <p class="kanban-task-title">Learn JavaScript</p>
                                 <span class="task-priority-medium">Medium</span>
                             </div>
-                            <div class="task-edit">
+                            <div class="kanban-task-edit-menu">
                                 <img
                                     src="assests/dots-menu.svg"
                                     alt="menu icon"
@@ -87,26 +88,26 @@
                                 />
                             </div>
                         </div>
-                        <div class="task-description-section">
+                        <div class="kanban-task-description">
                             Lorem ipsum, dolor sit amet consectetur adipisicing
                             elit. Recusandae ex quos impedit debitis quaerat
                             veniam quia minus tempora, deleniti porro
                             voluptatibus ducimus maiores facere adipisci eum,
                             non, vel commodi saepe?
                         </div>
-                        <hr class="hr-line" />
-                        <div class="task-footer-section">
-                            <p>Assigned To: Ashish Shah</p>
-                            <p>03 March 2025, 23:33PM</p>
+                        <hr class="kanban-task-divider" />
+                        <div class="kanban-task-footer">
+                            <p class="task-assigned-to">Assigned To: Ashish Shah</p>
+                            <p class="task-created-date">03 March 2025, 23:33PM</p>
                         </div>
                     </div>
-                    <div class="task-one">
-                        <div class="task-heading-section">
-                            <div class="task-heading-and-priority">
-                                <p class="task-heading">Learn JavaScript</p>
-                                <span class="task-priority-low">Low</span>
+                    <div class="kanban-task-card">
+                        <div class="kanban-task-header">
+                            <div class="kanban-task-info">
+                                <p class="kanban-task-title">Learn JavaScript</p>
+                                <span class="kanban-task-priority high">Low</span>
                             </div>
-                            <div class="task-edit">
+                            <div class="kanban-task-edit-menu">
                                 <img
                                     src="assests/dots-menu.svg"
                                     alt="menu icon"
@@ -114,348 +115,22 @@
                                 />
                             </div>
                         </div>
-                        <div class="task-description-section">
+                        <div class="kanban-task-description">
                             Lorem ipsum, dolor sit amet consectetur adipisicing
                             elit. Recusandae ex quos impedit debitis quaerat
                             veniam quia minus tempora, deleniti porro
                             voluptatibus ducimus maiores facere adipisci eum,
                             non, vel commodi saepe?
                         </div>
-                        <hr class="hr-line" />
-                        <div class="task-footer-section">
-                            <p>Assigned To: Ashish Shah</p>
-                            <p>03 March 2025, 23:33PM</p>
+                        <hr class="kanban-task-divider" />
+                        <div class="kanban-task-footer">
+                            <p class="task-assigned-to">Assigned To: Ashish Shah</p>
+                            <p class="task-created-date">03 March 2025, 23:33PM</p>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="container-one">
-                <div class="heading-container">
-                    <div class="heading-description">
-                        <div class="board-name-details">
-                            <div class="circle"></div>
-                            <span class="board-name">In Progress</span>
-                            <span class="board-items">13</span>
-                        </div>
-                        <div class="board-description">
-                            <span class="description"
-                                >These are the tasks have to do</span
-                            >
-                        </div>
-                    </div>
-                    <div class="menu-button">
-                        <img
-                            src="assests/dots-menu.svg"
-                            alt="menu icon"
-                            height="40%"
-                        />
-                    </div>
-                </div>
-                <div class="add-task-section">
-                    <button class="add-task">+ Add New Task</button>
-                </div>
-                <div class="tasks-section">
-                    <div class="task-one">
-                        <div class="task-heading-section">
-                            <div class="task-heading-and-priority">
-                                <p class="task-heading">Learn JavaScript</p>
-                                <span class="task-priority">High</span>
-                            </div>
-                            <div class="task-edit">
-                                <img
-                                    src="assests/dots-menu.svg"
-                                    alt="menu icon"
-                                    height="40%"
-                                />
-                            </div>
-                        </div>
-                        <div class="task-description-section">
-                            Lorem ipsum, dolor sit amet consectetur adipisicing
-                            elit. Recusandae ex quos impedit debitis quaerat
-                            veniam quia minus tempora, deleniti porro
-                            voluptatibus ducimus maiores facere adipisci eum,
-                            non, vel commodi saepe?
-                        </div>
-                        <hr class="hr-line" />
-                        <div class="task-footer-section">
-                            <p>Assigned To: Ashish Shah</p>
-                            <p>03 March 2025, 23:33PM</p>
-                        </div>
-                    </div>
-                    <div class="task-one">
-                        <div class="task-heading-section">
-                            <div class="task-heading-and-priority">
-                                <p class="task-heading">Learn JavaScript</p>
-                                <span class="task-priority">High</span>
-                            </div>
-                            <div class="task-edit">
-                                <img
-                                    src="assests/dots-menu.svg"
-                                    alt="menu icon"
-                                    height="40%"
-                                />
-                            </div>
-                        </div>
-                        <div class="task-description-section">
-                            Lorem ipsum, dolor sit amet consectetur adipisicing
-                            elit. Recusandae ex quos impedit debitis quaerat
-                            veniam quia minus tempora, deleniti porro
-                            voluptatibus ducimus maiores facere adipisci eum,
-                            non, vel commodi saepe?
-                        </div>
-                        <hr class="hr-line" />
-                        <div class="task-footer-section">
-                            <p>Assigned To: Ashish Shah</p>
-                            <p>03 March 2025, 23:33PM</p>
-                        </div>
-                    </div>
-                    <div class="task-one">
-                        <div class="task-heading-section">
-                            <div class="task-heading-and-priority">
-                                <p class="task-heading">Learn JavaScript</p>
-                                <span class="task-priority">High</span>
-                            </div>
-                            <div class="task-edit">
-                                <img
-                                    src="assests/dots-menu.svg"
-                                    alt="menu icon"
-                                    height="40%"
-                                />
-                            </div>
-                        </div>
-                        <div class="task-description-section">
-                            Lorem ipsum, dolor sit amet consectetur adipisicing
-                            elit. Recusandae ex quos impedit debitis quaerat
-                            veniam quia minus tempora, deleniti porro
-                            voluptatibus ducimus maiores facere adipisci eum,
-                            non, vel commodi saepe?
-                        </div>
-                        <hr class="hr-line" />
-                        <div class="task-footer-section">
-                            <p>Assigned To: Ashish Shah</p>
-                            <p>03 March 2025, 23:33PM</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="container-one">
-                <div class="heading-container">
-                    <div class="heading-description">
-                        <div class="board-name-details">
-                            <div class="circle"></div>
-                            <span class="board-name">In Progress</span>
-                            <span class="board-items">13</span>
-                        </div>
-                        <div class="board-description">
-                            <span class="description"
-                                >These are the tasks have to do</span
-                            >
-                        </div>
-                    </div>
-                    <div class="menu-button">
-                        <img
-                            src="assests/dots-menu.svg"
-                            alt="menu icon"
-                            height="40%"
-                        />
-                    </div>
-                </div>
-                <div class="add-task-section">
-                    <button class="add-task">+ Add New Task</button>
-                </div>
-                <div class="tasks-section">
-                    <div class="task-one">
-                        <div class="task-heading-section">
-                            <div class="task-heading-and-priority">
-                                <p class="task-heading">Learn JavaScript</p>
-                                <span class="task-priority">High</span>
-                            </div>
-                            <div class="task-edit">
-                                <img
-                                    src="assests/dots-menu.svg"
-                                    alt="menu icon"
-                                    height="40%"
-                                />
-                            </div>
-                        </div>
-                        <div class="task-description-section">
-                            Lorem ipsum, dolor sit amet consectetur adipisicing
-                            elit. Recusandae ex quos impedit debitis quaerat
-                            veniam quia minus tempora, deleniti porro
-                            voluptatibus ducimus maiores facere adipisci eum,
-                            non, vel commodi saepe?
-                        </div>
-                        <hr class="hr-line" />
-                        <div class="task-footer-section">
-                            <p>Assigned To: Ashish Shah</p>
-                            <p>03 March 2025, 23:33PM</p>
-                        </div>
-                    </div>
-                    <div class="task-one">
-                        <div class="task-heading-section">
-                            <div class="task-heading-and-priority">
-                                <p class="task-heading">Learn JavaScript</p>
-                                <span class="task-priority">High</span>
-                            </div>
-                            <div class="task-edit">
-                                <img
-                                    src="assests/dots-menu.svg"
-                                    alt="menu icon"
-                                    height="40%"
-                                />
-                            </div>
-                        </div>
-                        <div class="task-description-section">
-                            Lorem ipsum, dolor sit amet consectetur adipisicing
-                            elit. Recusandae ex quos impedit debitis quaerat
-                            veniam quia minus tempora, deleniti porro
-                            voluptatibus ducimus maiores facere adipisci eum,
-                            non, vel commodi saepe?
-                        </div>
-                        <hr class="hr-line" />
-                        <div class="task-footer-section">
-                            <p>Assigned To: Ashish Shah</p>
-                            <p>03 March 2025, 23:33PM</p>
-                        </div>
-                    </div>
-                    <div class="task-one">
-                        <div class="task-heading-section">
-                            <div class="task-heading-and-priority">
-                                <p class="task-heading">Learn JavaScript</p>
-                                <span class="task-priority">High</span>
-                            </div>
-                            <div class="task-edit">
-                                <img
-                                    src="assests/dots-menu.svg"
-                                    alt="menu icon"
-                                    height="40%"
-                                />
-                            </div>
-                        </div>
-                        <div class="task-description-section">
-                            Lorem ipsum, dolor sit amet consectetur adipisicing
-                            elit. Recusandae ex quos impedit debitis quaerat
-                            veniam quia minus tempora, deleniti porro
-                            voluptatibus ducimus maiores facere adipisci eum,
-                            non, vel commodi saepe?
-                        </div>
-                        <hr class="hr-line" />
-                        <div class="task-footer-section">
-                            <p>Assigned To: Ashish Shah</p>
-                            <p>03 March 2025, 23:33PM</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="container-one">
-                <div class="heading-container">
-                    <div class="heading-description">
-                        <div class="board-name-details">
-                            <div class="circle"></div>
-                            <span class="board-name">In Progress</span>
-                            <span class="board-items">13</span>
-                        </div>
-                        <div class="board-description">
-                            <span class="description"
-                                >These are the tasks have to do</span
-                            >
-                        </div>
-                    </div>
-                    <div class="menu-button">
-                        <img
-                            src="assests/dots-menu.svg"
-                            alt="menu icon"
-                            height="40%"
-                        />
-                    </div>
-                </div>
-                <div class="add-task-section">
-                    <button class="add-task">+ Add New Task</button>
-                </div>
-                <div class="tasks-section">
-                    <div class="task-one">
-                        <div class="task-heading-section">
-                            <div class="task-heading-and-priority">
-                                <p class="task-heading">Learn JavaScript</p>
-                                <span class="task-priority">High</span>
-                            </div>
-                            <div class="task-edit">
-                                <img
-                                    src="assests/dots-menu.svg"
-                                    alt="menu icon"
-                                    height="40%"
-                                />
-                            </div>
-                        </div>
-                        <div class="task-description-section">
-                            Lorem ipsum, dolor sit amet consectetur adipisicing
-                            elit. Recusandae ex quos impedit debitis quaerat
-                            veniam quia minus tempora, deleniti porro
-                            voluptatibus ducimus maiores facere adipisci eum,
-                            non, vel commodi saepe?
-                        </div>
-                        <hr class="hr-line" />
-                        <div class="task-footer-section">
-                            <p>Assigned To: Ashish Shah</p>
-                            <p>03 March 2025, 23:33PM</p>
-                        </div>
-                    </div>
-                    <div class="task-one">
-                        <div class="task-heading-section">
-                            <div class="task-heading-and-priority">
-                                <p class="task-heading">Learn JavaScript</p>
-                                <span class="task-priority-low">Low</span>
-                            </div>
-                            <div class="task-edit">
-                                <img
-                                    src="assests/dots-menu.svg"
-                                    alt="menu icon"
-                                    height="40%"
-                                />
-                            </div>
-                        </div>
-                        <div class="task-description-section">
-                            Lorem ipsum, dolor sit amet consectetur adipisicing
-                            elit. Recusandae ex quos impedit debitis quaerat
-                            veniam quia minus tempora, deleniti porro
-                            voluptatibus ducimus maiores facere adipisci eum,
-                            non, vel commodi saepe?
-                        </div>
-                        <hr class="hr-line" />
-                        <div class="task-footer-section">
-                            <p>Assigned To: Ashish Shah</p>
-                            <p>03 March 2025, 23:33PM</p>
-                        </div>
-                    </div>
-                    <div class="task-one">
-                        <div class="task-heading-section">
-                            <div class="task-heading-and-priority">
-                                <p class="task-heading">Learn JavaScript</p>
-                                <span class="task-priority">High</span>
-                            </div>
-                            <div class="task-edit">
-                                <img
-                                    src="assests/dots-menu.svg"
-                                    alt="menu icon"
-                                    height="40%"
-                                />
-                            </div>
-                        </div>
-                        <div class="task-description-section">
-                            Lorem ipsum, dolor sit amet consectetur adipisicing
-                            elit. Recusandae ex quos impedit debitis quaerat
-                            veniam quia minus tempora, deleniti porro
-                            voluptatibus ducimus maiores facere adipisci eum,
-                            non, vel commodi saepe?
-                        </div>
-                        <hr class="hr-line" />
-                        <div class="task-footer-section">
-                            <p>Assigned To: Ashish Shah</p>
-                            <p>03 March 2025, 23:33PM</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+           
         </div>
     </body>
 </html>

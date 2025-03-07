@@ -21,7 +21,10 @@
     <body>
         <button class="btn-add-board">+ Add New Board</button>
         <div class="kanban-board-container">
+            
+            
             <div class="kanban-board">
+                <!-- First Board -->
                 <div class="kanban-board-header">
                     <div class="board-heading-text-details">
                         <div class="board-name-details">
@@ -30,17 +33,13 @@
                             <span class="kanban-board-task-count">23</span>
                         </div>
                         <div class="kanban-board-description">
-                            <span class="kanban-description-text"
-                                >These are the tasks have to do</span
-                            >
+                            <span class="kanban-description-text">These are the tasks that have to be done</span>
                         </div>
                     </div>
-                    <div class="kanban-edit-button">
-                        <img
-                            src="assests/dots-menu.svg"
-                            alt="edit icon"
-                            height="40%"
-                        />
+                    <div class="kanban-edit-button header">
+                        <div class="dots dot1"></div>
+                        <div class="dots dot2"></div>
+                        <div class="dots dot3"></div>
                     </div>
                 </div>
                 <div class="kanban-board-add-task-section">
@@ -51,22 +50,18 @@
                         <div class="kanban-task-header">
                             <div class="kanban-task-info">
                                 <p class="kanban-task-title">Learn JavaScript</p>
-                                <span class="task-priority-high">High</span>
+                                <span class="kanban-task-priority high">High</span>
                             </div>
-                            <div class="kanban-task-edit-menu">
-                                <img
-                                    src="assests/dots-menu.svg"
-                                    alt="menu icon"
-                                    height="40%"
-                                />
+                            <div class="kanban-edit-button task">
+                                <div class="dots dot1"></div>
+                                <div class="dots dot2"></div>
+                                <div class="dots dot3"></div>
                             </div>
                         </div>
                         <div class="kanban-task-description">
-                            Lorem ipsum, dolor sit amet consectetur adipisicing
-                            elit. Recusandae ex quos impedit debitis quaerat
-                            veniam quia minus tempora, deleniti porro
-                            voluptatibus ducimus maiores facere adipisci eum,
-                            non, vel commodi saepe?
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed suscipit neque sit amet sem interdum
+                            dignissim. Integer vel vulputate tortor. Suspendisse potenti. Etiam sed metus eros. Curabitur sit amet
+                            turpis felis.
                         </div>
                         <hr class="kanban-task-divider" />
                         <div class="kanban-task-footer">
@@ -74,62 +69,416 @@
                             <p class="task-created-date">03 March 2025, 23:33PM</p>
                         </div>
                     </div>
+            
                     <div class="kanban-task-card">
                         <div class="kanban-task-header">
                             <div class="kanban-task-info">
-                                <p class="kanban-task-title">Learn JavaScript</p>
-                                <span class="task-priority-medium">Medium</span>
+                                <p class="kanban-task-title">Implement Dark Mode</p>
+                                <span class="kanban-task-priority medium">Medium</span>
                             </div>
-                            <div class="kanban-task-edit-menu">
-                                <img
-                                    src="assests/dots-menu.svg"
-                                    alt="menu icon"
-                                    height="40%"
-                                />
+                            <div class="kanban-edit-button task">
+                                <div class="dots dot1"></div>
+                                <div class="dots dot2"></div>
+                                <div class="dots dot3"></div>
                             </div>
                         </div>
                         <div class="kanban-task-description">
-                            Lorem ipsum, dolor sit amet consectetur adipisicing
-                            elit. Recusandae ex quos impedit debitis quaerat
-                            veniam quia minus tempora, deleniti porro
-                            voluptatibus ducimus maiores facere adipisci eum,
-                            non, vel commodi saepe?
+                            This task involves implementing dark mode functionality into the web application. We need to ensure that
+                            the theme switches seamlessly between dark and light mode based on the user's preference. Make sure to
+                            test on different devices and browsers for compatibility.
                         </div>
                         <hr class="kanban-task-divider" />
                         <div class="kanban-task-footer">
-                            <p class="task-assigned-to">Assigned To: Ashish Shah</p>
-                            <p class="task-created-date">03 March 2025, 23:33PM</p>
+                            <p class="task-assigned-to">Assigned To: John Doe</p>
+                            <p class="task-created-date">02 March 2025, 18:20PM</p>
                         </div>
                     </div>
+            
                     <div class="kanban-task-card">
                         <div class="kanban-task-header">
                             <div class="kanban-task-info">
-                                <p class="kanban-task-title">Learn JavaScript</p>
-                                <span class="kanban-task-priority high">Low</span>
+                                <p class="kanban-task-title">Fix UI Bugs</p>
+                                <span class="kanban-task-priority low">Low</span>
                             </div>
-                            <div class="kanban-task-edit-menu">
-                                <img
-                                    src="assests/dots-menu.svg"
-                                    alt="menu icon"
-                                    height="40%"
-                                />
+                            <div class="kanban-edit-button task">
+                                <div class="dots dot1"></div>
+                                <div class="dots dot2"></div>
+                                <div class="dots dot3"></div>
                             </div>
                         </div>
                         <div class="kanban-task-description">
-                            Lorem ipsum, dolor sit amet consectetur adipisicing
-                            elit. Recusandae ex quos impedit debitis quaerat
-                            veniam quia minus tempora, deleniti porro
-                            voluptatibus ducimus maiores facere adipisci eum,
-                            non, vel commodi saepe?
+                            There are several minor UI bugs that need to be addressed, such as misalignment of elements and incorrect
+                            font sizes on the homepage. These fixes are not critical, but they will enhance the user experience and
+                            make the interface more polished.
                         </div>
                         <hr class="kanban-task-divider" />
                         <div class="kanban-task-footer">
-                            <p class="task-assigned-to">Assigned To: Ashish Shah</p>
-                            <p class="task-created-date">03 March 2025, 23:33PM</p>
+                            <p class="task-assigned-to">Assigned To: Sarah Connor</p>
+                            <p class="task-created-date">01 March 2025, 15:10PM</p>
                         </div>
                     </div>
                 </div>
             </div>
+            
+            <!-- Second Board -->
+            <div class="kanban-board">
+                <div class="kanban-board-header">
+                    <div class="board-heading-text-details">
+                        <div class="board-name-details">
+                            <div class="kanban-board-color-icon"></div>
+                            <span class="kanban-board-title">In Progress</span>
+                            <span class="kanban-board-task-count">15</span>
+                        </div>
+                        <div class="kanban-board-description">
+                            <span class="kanban-description-text">These are tasks currently being worked on</span>
+                        </div>
+                    </div>
+                    <div class="kanban-edit-button header">
+                        <div class="dots dot1"></div>
+                        <div class="dots dot2"></div>
+                        <div class="dots dot3"></div>
+                    </div>
+                </div>
+                <div class="kanban-board-add-task-section">
+                    <button class="button-add-task">+ Add New Task</button>
+                </div>
+                <div class="kanban-board-tasks">
+                    <div class="kanban-task-card">
+                        <div class="kanban-task-header">
+                            <div class="kanban-task-info">
+                                <p class="kanban-task-title">Refactor Codebase</p>
+                                <span class="kanban-task-priority high">High</span>
+                            </div>
+                            <div class="kanban-edit-button task">
+                                <div class="dots dot1"></div>
+                                <div class="dots dot2"></div>
+                                <div class="dots dot3"></div>
+                            </div>
+                        </div>
+                        <div class="kanban-task-description">
+                            The current codebase is becoming difficult to maintain. We need to refactor parts of the code to improve
+                            readability and modularity. This includes breaking large functions into smaller ones and organizing files
+                            based on their purpose.
+                        </div>
+                        <hr class="kanban-task-divider" />
+                        <div class="kanban-task-footer">
+                            <p class="task-assigned-to">Assigned To: Michael Green</p>
+                            <p class="task-created-date">03 March 2025, 10:00AM</p>
+                        </div>
+                    </div>
+            
+                    <div class="kanban-task-card">
+                        <div class="kanban-task-header">
+                            <div class="kanban-task-info">
+                                <p class="kanban-task-title">User Testing</p>
+                                <span class="kanban-task-priority medium">Medium</span>
+                            </div>
+                            <div class="kanban-edit-button task">
+                                <div class="dots dot1"></div>
+                                <div class="dots dot2"></div>
+                                <div class="dots dot3"></div>
+                            </div>
+                        </div>
+                        <div class="kanban-task-description">
+                            User testing for the new feature is scheduled for this week. We need to ensure that the test cases are
+                            prepared and users are recruited. Feedback will be gathered to determine any further changes needed
+                            before the release.
+                        </div>
+                        <hr class="kanban-task-divider" />
+                        <div class="kanban-task-footer">
+                            <p class="task-assigned-to">Assigned To: Jane Smith</p>
+                            <p class="task-created-date">02 March 2025, 14:45PM</p>
+                        </div>
+                    </div>
+            
+                    <div class="kanban-task-card">
+                        <div class="kanban-task-header">
+                            <div class="kanban-task-info">
+                                <p class="kanban-task-title">Update Documentation</p>
+                                <span class="kanban-task-priority low">Low</span>
+                            </div>
+                            <div class="kanban-edit-button task">
+                                <div class="dots dot1"></div>
+                                <div class="dots dot2"></div>
+                                <div class="dots dot3"></div>
+                            </div>
+                        </div>
+                        <div class="kanban-task-description">
+                            The project's documentation is outdated and needs to be updated to reflect the latest changes in the code.
+                            This task includes updating the README file, API documentation, and creating a section for new team members.
+                        </div>
+                        <hr class="kanban-task-divider" />
+                        <div class="kanban-task-footer">
+                            <p class="task-assigned-to">Assigned To: Robert Lang</p>
+                            <p class="task-created-date">01 March 2025, 11:30AM</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="kanban-board">
+                <div class="kanban-board-header">
+                    <div class="board-heading-text-details">
+                        <div class="board-name-details">
+                            <div class="kanban-board-color-icon"></div>
+                            <span class="kanban-board-title">Completed</span>
+                            <span class="kanban-board-task-count">10</span>
+                        </div>
+                        <div class="kanban-board-description">
+                            <span class="kanban-description-text">These are the tasks that have been completed</span>
+                        </div>
+                    </div>
+                    <div class="kanban-edit-button header">
+                        <div class="dots dot1"></div>
+                        <div class="dots dot2"></div>
+                        <div class="dots dot3"></div>
+                    </div>
+                </div>
+                <div class="kanban-board-add-task-section">
+                    <button class="button-add-task">+ Add New Task</button>
+                </div>
+                <div class="kanban-board-tasks">
+                    <!-- Task 1 -->
+                    <div class="kanban-task-card">
+                        <div class="kanban-task-header">
+                            <div class="kanban-task-info">
+                                <p class="kanban-task-title">Set Up Web Server</p>
+                                <span class="kanban-task-priority high">High</span>
+                            </div>
+                            <div class="kanban-edit-button task">
+                                <div class="dots dot1"></div>
+                                <div class="dots dot2"></div>
+                                <div class="dots dot3"></div>
+                            </div>
+                        </div>
+                        <div class="kanban-task-description">
+                            We completed setting up the web server. The configuration for the Apache server was successful, and the
+                            application is now running in a production environment. Additional security measures have been put in place.
+                        </div>
+                        <hr class="kanban-task-divider" />
+                        <div class="kanban-task-footer">
+                            <p class="task-assigned-to">Assigned To: Daniel Craig</p>
+                            <p class="task-created-date">25 February 2025, 09:00AM</p>
+                        </div>
+                    </div>
+            
+                    <!-- Task 2 -->
+                    <div class="kanban-task-card">
+                        <div class="kanban-task-header">
+                            <div class="kanban-task-info">
+                                <p class="kanban-task-title">Write Unit Tests</p>
+                                <span class="kanban-task-priority medium">Medium</span>
+                            </div>
+                            <div class="kanban-edit-button task">
+                                <div class="dots dot1"></div>
+                                <div class="dots dot2"></div>
+                                <div class="dots dot3"></div>
+                            </div>
+                        </div>
+                        <div class="kanban-task-description">
+                            Unit tests for the payment module have been completed successfully. Tests include verifying payment gateway
+                            integration and confirming that error messages are displayed correctly when the payment fails.
+                        </div>
+                        <hr class="kanban-task-divider" />
+                        <div class="kanban-task-footer">
+                            <p class="task-assigned-to">Assigned To: Sophia Turner</p>
+                            <p class="task-created-date">24 February 2025, 13:40PM</p>
+                        </div>
+                    </div>
+            
+                    <!-- Task 3 -->
+                    <div class="kanban-task-card">
+                        <div class="kanban-task-header">
+                            <div class="kanban-task-info">
+                                <p class="kanban-task-title">Update CSS Styles</p>
+                                <span class="kanban-task-priority low">Low</span>
+                            </div>
+                            <div class="kanban-edit-button task">
+                                <div class="dots dot1"></div>
+                                <div class="dots dot2"></div>
+                                <div class="dots dot3"></div>
+                            </div>
+                        </div>
+                        <div class="kanban-task-description">
+                            Completed minor styling updates for the website. This included fixing font issues and updating button hover
+                            states for better accessibility. No major design changes were made.
+                        </div>
+                        <hr class="kanban-task-divider" />
+                        <div class="kanban-task-footer">
+                            <p class="task-assigned-to">Assigned To: Emily Clark</p>
+                            <p class="task-created-date">23 February 2025, 16:25PM</p>
+                        </div>
+                    </div>
+            
+                    <!-- Task 4 -->
+                    <div class="kanban-task-card">
+                        <div class="kanban-task-header">
+                            <div class="kanban-task-info">
+                                <p class="kanban-task-title">Fix Mobile Responsiveness</p>
+                                <span class="kanban-task-priority high">High</span>
+                            </div>
+                            <div class="kanban-edit-button task">
+                                <div class="dots dot1"></div>
+                                <div class="dots dot2"></div>
+                                <div class="dots dot3"></div>
+                            </div>
+                        </div>
+                        <div class="kanban-task-description">
+                            Mobile responsiveness for the website was fixed by adjusting layout breaks and ensuring proper scaling of
+                            elements. The site is now fully functional across all screen sizes.
+                        </div>
+                        <hr class="kanban-task-divider" />
+                        <div class="kanban-task-footer">
+                            <p class="task-assigned-to">Assigned To: Liam Neeson</p>
+                            <p class="task-created-date">22 February 2025, 10:15AM</p>
+                        </div>
+                    </div>
+            
+                    <!-- Task 5 -->
+                    <div class="kanban-task-card">
+                        <div class="kanban-task-header">
+                            <div class="kanban-task-info">
+                                <p class="kanban-task-title">Deploy to Production</p>
+                                <span class="kanban-task-priority medium">Medium</span>
+                            </div>
+                            <div class="kanban-edit-button task">
+                                <div class="dots dot1"></div>
+                                <div class="dots dot2"></div>
+                                <div class="dots dot3"></div>
+                            </div>
+                        </div>
+                        <div class="kanban-task-description">
+                            The application was successfully deployed to the production environment. The deployment process went
+                            smoothly with no issues encountered during the migration. All systems are now up and running.
+                        </div>
+                        <hr class="kanban-task-divider" />
+                        <div class="kanban-task-footer">
+                            <p class="task-assigned-to">Assigned To: Olivia Wilde</p>
+                            <p class="task-created-date">21 February 2025, 08:55AM</p>
+                        </div>
+                    </div>
+            
+                    <!-- Task 6 -->
+                    <div class="kanban-task-card">
+                        <div class="kanban-task-header">
+                            <div class="kanban-task-info">
+                                <p class="kanban-task-title">Write Blog Post</p>
+                                <span class="kanban-task-priority low">Low</span>
+                            </div>
+                            <div class="kanban-edit-button task">
+                                <div class="dots dot1"></div>
+                                <div class="dots dot2"></div>
+                                <div class="dots dot3"></div>
+                            </div>
+                        </div>
+                        <div class="kanban-task-description">
+                            The blog post for the website's new feature has been published. It highlights the benefits of the feature
+                            and provides step-by-step instructions on how to use it.
+                        </div>
+                        <hr class="kanban-task-divider" />
+                        <div class="kanban-task-footer">
+                            <p class="task-assigned-to">Assigned To: Chris Hemsworth</p>
+                            <p class="task-created-date">20 February 2025, 12:30PM</p>
+                        </div>
+                    </div>
+            
+                    <!-- Task 7 -->
+                    <div class="kanban-task-card">
+                        <div class="kanban-task-header">
+                            <div class="kanban-task-info">
+                                <p class="kanban-task-title">Set Up Analytics</p>
+                                <span class="kanban-task-priority medium">Medium</span>
+                            </div>
+                            <div class="kanban-edit-button task">
+                                <div class="dots dot1"></div>
+                                <div class="dots dot2"></div>
+                                <div class="dots dot3"></div>
+                            </div>
+                        </div>
+                        <div class="kanban-task-description">
+                            Analytics tools have been set up for tracking website traffic and user engagement. Data will be reviewed
+                            weekly to monitor key performance indicators and inform business decisions.
+                        </div>
+                        <hr class="kanban-task-divider" />
+                        <div class="kanban-task-footer">
+                            <p class="task-assigned-to">Assigned To: Mark Ruffalo</p>
+                            <p class="task-created-date">19 February 2025, 09:50AM</p>
+                        </div>
+                    </div>
+            
+                    <!-- Task 8 -->
+                    <div class="kanban-task-card">
+                        <div class="kanban-task-header">
+                            <div class="kanban-task-info">
+                                <p class="kanban-task-title">Optimize Database Queries</p>
+                                <span class="kanban-task-priority high">High</span>
+                            </div>
+                            <div class="kanban-edit-button task">
+                                <div class="dots dot1"></div>
+                                <div class="dots dot2"></div>
+                                <div class="dots dot3"></div>
+                            </div>
+                        </div>
+                        <div class="kanban-task-description">
+                            Database queries have been optimized, resulting in faster response times and improved efficiency. The
+                            query execution plan was analyzed, and indexes were added to improve performance.
+                        </div>
+                        <hr class="kanban-task-divider" />
+                        <div class="kanban-task-footer">
+                            <p class="task-assigned-to">Assigned To: Tom Hiddleston</p>
+                            <p class="task-created-date">18 February 2025, 11:05AM</p>
+                        </div>
+                    </div>
+            
+                    <!-- Task 9 -->
+                    <div class="kanban-task-card">
+                        <div class="kanban-task-header">
+                            <div class="kanban-task-info">
+                                <p class="kanban-task-title">Fix 404 Errors</p>
+                                <span class="kanban-task-priority low">Low</span>
+                            </div>
+                            <div class="kanban-edit-button task">
+                                <div class="dots dot1"></div>
+                                <div class="dots dot2"></div>
+                                <div class="dots dot3"></div>
+                            </div>
+                        </div>
+                        <div class="kanban-task-description">
+                            Resolved several 404 errors across the website by redirecting broken links to the correct pages. No
+                            further action is needed unless new errors arise.
+                        </div>
+                        <hr class="kanban-task-divider" />
+                        <div class="kanban-task-footer">
+                            <p class="task-assigned-to">Assigned To: Scarlett Johansson</p>
+                            <p class="task-created-date">17 February 2025, 10:00AM</p>
+                        </div>
+                    </div>
+            
+                    <!-- Task 10 -->
+                    <div class="kanban-task-card">
+                        <div class="kanban-task-header">
+                            <div class="kanban-task-info">
+                                <p class="kanban-task-title">Integrate Payment Gateway</p>
+                                <span class="kanban-task-priority medium">Medium</span>
+                            </div>
+                            <div class="kanban-edit-button task">
+                                <div class="dots dot1"></div>
+                                <div class="dots dot2"></div>
+                                <div class="dots dot3"></div>
+                            </div>
+                        </div>
+                        <div class="kanban-task-description">
+                            The payment gateway has been successfully integrated into the system. Tests show that payments are being
+                            processed without any issues.
+                        </div>
+                        <hr class="kanban-task-divider" />
+                        <div class="kanban-task-footer">
+                            <p class="task-assigned-to">Assigned To: Chris Pratt</p>
+                            <p class="task-created-date">16 February 2025, 14:20PM</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
            
         </div>
     </body>

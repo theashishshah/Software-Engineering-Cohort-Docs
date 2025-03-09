@@ -28,6 +28,16 @@ body {
     border-radius: 4px;
     margin: 32px 0 0 32px;
 }
+.create-board-btn{
+    background-color: #0000ff;
+    font-size: 16px;
+    border: none;
+    width: 100%;
+    color: white;
+    font-weight: 500;
+    padding: 8px 16px;
+    border-radius: 4px;
+}
 .btn-add-board:hover {
     background-color: #0700c4;
 }
@@ -46,7 +56,7 @@ body {
 }
 .kanban-board {
     border-radius: 4px;
-    width: 23%;
+    width: 400px;
     padding: 16px;
     margin: 16px;
     margin-bottom: 16px;
@@ -81,8 +91,18 @@ body {
 .kanban-board-color-icon {
     width: 12px;
     height: 12px;
-    background-color: #f08080;
+
     border-radius: 50%;
+}
+
+.kanban-board-color-icon.red{
+    background-color: #f08080;
+}
+.kanban-board-color-icon.blue{
+    background-color: #8080f0;
+}
+.kanban-board-color-icon.green{
+    background-color: #42f882;
 }
 .kanban-board-title {
     font-weight: 500;
@@ -96,7 +116,8 @@ body {
 .kanban-description-text {
     /* border: 1px solid blue; */
     font-size: 14px;
-    color: rgba(0, 0, 0, 0.581);
+    /* color: rgba(0, 0, 0, 0.581); */
+    color: #8080f0;
 }
 
 .kanban-board .kanban-board-add-task-section {

@@ -2,7 +2,8 @@ import express from 'express';
 import 'dotenv/config';
 import cors from 'cors';
 import dbConnect from './utils/dbConnect.js';
-import nammed from './routes/user.route.js';
+import userRoutes from './routes/user.route.js';
+import cookieParser from 'cookie-parser';
 
 
 const app = express();
@@ -18,6 +19,7 @@ app.use(
 );
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
+app.use(cookieParser())
 
 app.get('/', (req, res) => {
     res.send(`Home page!`);
@@ -34,7 +36,7 @@ app.get('/ashishshah', (req, res) => {
 dbConnect();
 
 //user routes
-app.use("/api/v1/users/", nammed)
+app.use("/api/v1/users/", userRoutes)
 app.listen(port, () => {
     console.log(`Server is listening at port ${port}`);
 });

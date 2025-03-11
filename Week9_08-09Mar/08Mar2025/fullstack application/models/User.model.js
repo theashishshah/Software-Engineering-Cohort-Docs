@@ -1,4 +1,5 @@
 import mongoose, { modelNames, mongo } from "mongoose";
+import bcryptjs from "bcryptjs"
 
 const userSchema = new mongoose.Schema({
     name:String,
@@ -23,6 +24,17 @@ const userSchema = new mongoose.Schema({
         type: Date,
     }
 }, {timestamps: true})
+
+userSchema.pre("save", async function (next) {
+    if(this.isModified("password")){
+        this.password = await bcryptjs.hash(this.password, 10)
+    }
+    next()
+})
+
+// userSchema.post("save", async function (next) {
+//     next()
+// })
 
 const User = mongoose.model("User", userSchema)
 export default User

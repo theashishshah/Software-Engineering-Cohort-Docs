@@ -1,0 +1,98 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Body styling */
+body {
+  background: linear-gradient(135deg, #1e2a47, #4c6b9f);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: white;
+  text-align: center;
+  padding: 0 20px;
+  overflow: hidden;
+}
+
+/* Clock Container */
+.clock-container {
+  background: rgba(0, 0, 0, 0.7);
+  padding: 40px 60px;
+  border-radius: 20px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
+  transform: scale(1);
+  animation: scaleIn 1s ease-out;
+}
+
+/* Time styling */
+#time {
+  font-size: 80px;
+  font-weight: 700;
+  letter-spacing: 4px;
+  color: #ffeb3b;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+  margin-bottom: 20px;
+  transition: color 0.5s ease;
+}
+
+#time:hover {
+  color: #ff9800;
+}
+
+/* Date styling */
+#date {
+  font-size: 22px;
+  color: #ddd;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* Animation for clock container */
+@keyframes scaleIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Add a subtle floating effect to the container */
+@keyframes floating {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.clock-container {
+  animation: floating 3s ease-in-out infinite;
+}
+
+/* Small tweaks for responsiveness */
+@media (max-width: 768px) {
+  .clock-container {
+    padding: 30px 40px;
+  }
+
+  #time {
+    font-size: 60px;
+  }
+
+  #date {
+    font-size: 18px;
+  }
+}

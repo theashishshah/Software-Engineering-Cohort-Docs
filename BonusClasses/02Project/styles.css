@@ -1,0 +1,115 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  /* Body Styling */
+  body {
+    background: linear-gradient(135deg, #0f1c2f, #2a3a66);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: white;
+    text-align: center;
+    font-size: 16px;
+  }
+  
+  /* Container Styling */
+  .container {
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 20px;
+    padding: 40px 60px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    transition: all 0.3s ease;
+  }
+  
+  /* Header (Title) Styling */
+  h1 {
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #f9a825;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+  }
+  
+  /* Input Styling */
+  input {
+    width: 100%;
+    padding: 15px;
+    font-size: 18px;
+    border-radius: 10px;
+    border: 2px solid #f9a825;
+    margin-bottom: 20px;
+    background: transparent;
+    color: white;
+    text-align: center;
+    transition: border-color 0.3s ease;
+  }
+  
+  input:focus {
+    outline: none;
+    border-color: #ff5722;
+  }
+  
+  /* Button Styling */
+  button {
+    padding: 12px 25px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #f9a825;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #ff5722;
+  }
+  
+  /* Countdown Display Styling */
+  #countdownDisplay {
+    font-size: 48px;
+    font-weight: bold;
+    margin-top: 30px;
+    color: #ff5722;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+  }
+  
+  /* Animations for Countdown */
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  .container {
+    animation: fadeIn 1.5s ease-out;
+  }
+  
+  /* Responsiveness for small screens */
+  @media (max-width: 768px) {
+    .container {
+      padding: 30px 40px;
+    }
+  
+    h1 {
+      font-size: 28px;
+    }
+  
+    #countdownDisplay {
+      font-size: 40px;
+    }
+  }
+  

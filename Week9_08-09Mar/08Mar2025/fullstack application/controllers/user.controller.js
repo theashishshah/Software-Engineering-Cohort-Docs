@@ -1,4 +1,3 @@
-import mongoose, { mongo } from 'mongoose';
 import User from '../models/User.model.js';
 import crypto from 'crypto';
 import nodemailer from 'nodemailer';

@@ -1,13 +1,13 @@
 import app from './app.js';
-import dotenv from 'dotenv';
+import 'dotenv/config'
 import dbConnect from './db/db.config.js';
 
-dotenv.config({
-    path: '../.env',
-});
+// dotenv.config({
+//     path: '../.env',
+// });
 
 const PORT = process.env.PORT || 9999;
-
+ 
 dbConnect()
     .then(() => {
         app.listen(PORT, () => {

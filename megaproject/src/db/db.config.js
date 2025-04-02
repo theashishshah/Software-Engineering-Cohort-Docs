@@ -13,6 +13,7 @@ const dbConnect = async () => {
 
         console.log('✅ Database connected successfully.');
     } catch (error) {
+        console.log(process.env.MONGODB_URI)
         console.error('❌ Database connection error:', error.message);
         process.exit(1);
     }

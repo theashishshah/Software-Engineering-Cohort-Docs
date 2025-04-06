@@ -71,4 +71,4 @@ try {
     const invalidData = new APIResponse({ data: "hello" });
 } catch (error) {}
 
-export default APIResponse
+export default APIResponse;

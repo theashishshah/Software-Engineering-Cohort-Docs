@@ -1,0 +1,38 @@
+# Ignore build output folders
+dist/
+build/
+out/
+
+# Ignore node modules
+node_modules/
+
+# Ignore logs and temporary files
+*.log
+*.tmp
+*.temp
+
+# Ignore compiled files
+*.min.js
+*.bundle.js
+
+# Ignore config files sometimes handled manually
+
+
+# Ignore markdown files if you don’t want to format them
+*.md
+
+# Ignore git-related files
+.gitignore
+.gitattributes
+
+# Ignore IDE/editor folders
+.vscode/
+.idea/
+
+# Ignore coverage reports
+coverage/
+
+# Ignore env files
+.env
+.env.local
+.env.*.local

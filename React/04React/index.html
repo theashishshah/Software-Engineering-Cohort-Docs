@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<script src="https://unpkg.com/react@18.3.1/umd/react.development.js"></script>
+		<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js"></script>
+		<title>Classic React</title>
+	</head>
+	<body>
+		<h1 id="root">Hello from classic react lecture</h1>
+
+		<script src="https://unpkg.com/babel-standalone@6.26.0/babel.min.js"></script>
+		<script type="text/babel">
+			const Chai = (props) => {
+                console.log(props)
+				return (
+					<div>
+						<h2>Hello from Ashish's custom react learning</h2>
+					</div>
+				);
+			};
+
+			const container = document.getElementById("root");
+			const root = ReactDOM.createRoot(container);
+			root.render(React.createElement(Chai));
+			console.log(container);
+		</script>
+	</body>
+</html>

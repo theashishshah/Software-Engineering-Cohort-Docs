@@ -1,11 +1,13 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import './index.css'
-import ListCard from './components/ListCard'
 import Jokes from './components/Jokes'
+import HookTest from './components/HookTest';
+import Dropdown from './components/Dropdown';
+import ContactForm from './components/ContactForm';
 
-createRoot(document.getElementById('root')).render(
-  <StrictMode>
-    <Jokes />
-  </StrictMode>,
-)
+createRoot(document.getElementById("root")).render(
+	<StrictMode>
+		<ContactForm />
+	</StrictMode>
+);
